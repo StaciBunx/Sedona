@@ -172,12 +172,97 @@
     <section class="catalog-cards">
 
       <ul class="catalog-list">
-        <li class="catalog-list-item">
+        <li class="catalog-card">
+          <a href="#" class="catalog-card-list">
+            <img class="catalog-card-image" src="" alt="Изображение гостиницы">
+            <h3 class="catalog-card-title">Amara Resort & Spa</h3>
+          </a>
+          <p class="catalog-card-text">Гостиница</p>
+          <b class="catalog-card-price">От 4000 ₽</b>
+          <a class="catalog-card-button button" href="#">Подробнее</a>
+          <button class="catalog-card-button" type="button">В избранное</button>
+          <img class="rating-img" src="" alt="Количество звезд">
+          <p class="rating-text">Рейтинг: 8,5</p>
+        </li>
 
+        <li class="catalog-card">
+          <a href="#" class="catalog-card-list">
+            <img class="catalog-card-image" src="" alt="Изображение гостиницы">
+            <h3 class="catalog-card-title">Desert Quail Inn</h3>
+          </a>
+          <p class="catalog-card-text">Гостиница</p>
+          <b class="catalog-card-price">От 3000 ₽</b>
+          <a class="catalog-card-button button" href="#">Подробнее</a>
+          <button class="catalog-card-button" type="button">В избранное</button>
+          <img class="rating-img" src="" alt="Количество звезд">
+          <p class="rating-text">Рейтинг: 8,5</p>
+        </li>
 
+        <li class="catalog-card">
+          <a href="#" class="catalog-card-list">
+            <img class="catalog-card-image" src="" alt="Изображение гостиницы">
+            <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
+          </a>
+          <p class="catalog-card-text">Гостиница</p>
+          <b class="catalog-card-price">От 2000 ₽</b>
+          <a class="catalog-card-button button" href="#">Подробнее</a>
+          <button class="catalog-card-button" type="button">В избранное</button>
+          <img class="rating-img" src="" alt="Количество звезд">
+          <p class="rating-text">Рейтинг: 8,5</p>
+        </li>
+
+        <li class="catalog-card">
+          <a href="#" class="catalog-card-list">
+            <img class="catalog-card-image" src="" alt="Изображение гостиницы">
+            <h3 class="catalog-card-title">GreenTree Inn</h3>
+          </a>
+          <p class="catalog-card-text">Гостиница</p>
+          <b class="catalog-card-price">От 3000 ₽</b>
+          <a class="catalog-card-button button" href="#">Подробнее</a>
+          <button class="catalog-card-button" type="button">В избранное</button>
+          <img class="rating-img" src="" alt="Количество звезд">
+          <p class="rating-text">Рейтинг: 8,5</p>
         </li>
       </ul>
 
+      <button class="button button-pagination-load-more" type="button">Загрузить ещё</button>
+
+      <ul class="pagination">
+
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current" href="">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="">...</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="">10</a>
+        </li>
+      </ul>
+
+      <form class="show-cards-amount">
+        <label class="catalog-text">Гостиниц на странице:</label>
+        <select class="select-control" name="show-cards" id="show-cards">
+          <option value="4">4</option>
+          <option value="10">10</option>
+          <option value="25">25</option>
+        </select>
+        <button class="visually-hidden" type="submit">
+          Загрузить гостиницы
+        </button>
+      </form>
 
     </section>
 
