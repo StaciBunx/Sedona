@@ -1,0 +1,6 @@
+.top-banner {
+  width: 1200px;
+  height: 485px;
+  background-image: url(./img/index-top-banner.jpg);
+  background-size: cover;
+}
