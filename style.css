@@ -4,3 +4,10 @@
   background-image: url(./img/index-top-banner.jpg);
   background-size: cover;
 }
+
+.subscribe {
+  width: 1200px;
+  height: 411px;
+  background-image: url(./img/index-background.jpg);
+  background-size: cover;
+}
