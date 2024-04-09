@@ -162,6 +162,15 @@ body {
   opacity: 0.3;
 }
 
+/* Select */
+
+.select {
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  width: 160px;
+  height: 48px;
+}
+
 /* Promo */
 
 .top-banner {
@@ -173,6 +182,19 @@ body {
 }
 
 /* Card */
+
+.card-containter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+
+}
+
+.card {
+  width: 340px;
+  padding: 20px;
+}
+
 .card-title {
   font-size: 24px;
   line-height: 31px;
@@ -189,12 +211,30 @@ body {
 }
 
 /* Pagination */
+
+.pagination-view {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-list {
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .pagination-link {
   color: #fff;
   background-color: #83B3D3;
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
+}
+
+.pagination-select {
+  width: 386px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Advantages */
@@ -276,6 +316,9 @@ body {
 }
 
 /* Filter */
+.filter-form {
+  display: flex;
+}
 
 .filter-title {
   font-size: 20px;
