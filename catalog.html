@@ -109,7 +109,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="filter-fieldset">
+          <fieldset class="filter-fieldset filter-fieldset-price">
             <legend class="filter-title">Стоимость, ₽:</legend>
 
             <div class="range">
@@ -146,45 +146,48 @@
 
     <section class="catalog">
       <h2 class="visually-hidden">Результаты поиска</h2>
-      <p class="section-title">Найдено гостиниц: 38</p>
 
-      <h3 class="visually-hidden">Сортировка и отображение</h3>
-      <details class="select">
-        <summary class="select-button">Сначала дешёвые</summary>
+      <div class="catalog-sort">
 
-        <ul class="select-menu">
-          <li class="select-item select-item-active">
-            <a class="select-option" href="#">Сначала дешёвые</a>
+        <p class="section-title catalog-title">Найдено гостиниц: 38</p>
+
+        <h3 class="visually-hidden" hidden>Сортировка и отображение</h3>
+        <details class="select catalog-select">
+          <summary class="select-button">Сначала дешёвые</summary>
+          <ul class="select-menu">
+            <li class="select-item select-item-active">
+              <a class="select-option" href="#">Сначала дешёвые</a>
+            </li>
+            <li class="select-item">
+              <a class="select-option" href="#">Сначала дорогие</a>
+            </li>
+            <li class="select-item">
+              <a class="select-option" href="#">Сначала популярные</a>
+            </li>
+            <li class="select-item">
+              <a class="select-option" href="#">Сначала комфортные</a>
+            </li>
+          </ul>
+        </details>
+        <ul class="view">
+          <li class="view-item view-item-active">
+            <a class="view-link">
+              <span class="visually-hidden">Карточками</span>
+            </a>
           </li>
-          <li class="select-item">
-            <a class="select-option" href="#">Сначала дорогие</a>
+          <li class="view-item">
+            <a class="view-link" href="#">
+              <span class="visually-hidden">Слайдами</span>
+            </a>
           </li>
-          <li class="select-item">
-            <a class="select-option" href="#">Сначала популярные</a>
-          </li>
-          <li class="select-item">
-            <a class="select-option" href="#">Сначала комфортные</a>
+          <li class="view-item">
+            <a class="view-link" href="#">
+              <span class="visually-hidden">Списком</span>
+            </a>
           </li>
         </ul>
-      </details>
+      </div>
 
-      <ul class="view">
-        <li class="view-item view-item-active">
-          <a class="view-link">
-            <span class="visually-hidden">Карточками</span>
-          </a>
-        </li>
-        <li class="view-item">
-          <a class="view-link" href="#">
-            <span class="visually-hidden">Слайдами</span>
-          </a>
-        </li>
-        <li class="view-item">
-          <a class="view-link" href="#">
-            <span class="visually-hidden">Списком</span>
-          </a>
-        </li>
-      </ul>
 
       <h3 class="visually-hidden">Список гостиниц</h3>
 
@@ -287,7 +290,7 @@
         <button class="button button-large" type="button">Загрузить ещё</button>
 
         <h3 class="visually-hidden">Список страниц</h3>
-        <div class="pagination-view">
+        <div class="pagination-nav">
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-active">
               <a class="pagination-link">1</a>

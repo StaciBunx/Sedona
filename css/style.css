@@ -16,14 +16,6 @@
 
 /* Commom */
 
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-
-}
-
 .page {
   height: 100%;
   color: #333333;
@@ -70,7 +62,7 @@ body {
 .header-nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 70px;
+  padding: 0 72px;
 
 }
 
@@ -96,7 +88,7 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 70px;
+  padding: 0 72px;
 }
 
 .footer-social {
@@ -113,6 +105,8 @@ body {
 /* Main */
 
 .main-header {
+  padding: 35px 72px 80px;
+
   color: #fff;
   background-color: #83B3D3;
   background-image: url(../img/catalog-background.jpg);
@@ -120,11 +114,14 @@ body {
 }
 
 .main-heading {
+  margin: 0;
   font-size: 60px;
-  line-height: 70px;
+  line-height: 78px;
 }
 
 .breadcrumbs {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
 }
 
@@ -183,13 +180,6 @@ body {
 
 /* Card */
 
-.card-containter {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-
-}
-
 .card {
   width: 340px;
   padding: 20px;
@@ -208,33 +198,6 @@ body {
 .card-rate {
   font-size: 16px;
   text-transform: uppercase;
-}
-
-/* Pagination */
-
-.pagination-view {
-  display: flex;
-  justify-content: space-between;
-}
-
-.pagination-list {
-  width: 370px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.pagination-link {
-  color: #fff;
-  background-color: #83B3D3;
-  font-size: 20px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.pagination-select {
-  width: 386px;
-  display: flex;
-  justify-content: space-between;
 }
 
 /* Advantages */
@@ -326,9 +289,86 @@ body {
   line-height: 26px;
 }
 
+.filter-fieldset {
+  width: 200px;
+  margin: 0;
+  margin-right: 17px;
+  padding: 0;
+}
+
+.filter-fieldset-price {
+  width: 287px;
+  margin-left: 95px;
+}
+
 .filter-reset {
+  align-self: center;
+
   color: #fff;
   background-color: transparent;
   font-family: inherit;
   font-size: 18px;
+}
+
+.filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  margin-left: 64px;
+}
+
+/* Catalog */
+
+.catalog {
+  padding: 0 72px;
+}
+
+.catalog-sort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-title {
+  width: 50%;
+  margin: 0;
+}
+
+.catalog-select {
+  width: 287px;
+  margin-right: auto;
+}
+
+.view {
+  margin: 0;
+  padding: 0;
+}
+
+/* Pagination */
+
+.pagination-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-link {
+  color: #fff;
+  background-color: #83B3D3;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pagination-select {
+  display: flex;
 }
