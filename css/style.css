@@ -21,12 +21,29 @@
   margin: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
 
 li {
   list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page {
@@ -49,17 +66,6 @@ li {
 
 .page-main {
   flex-grow: 1;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /* Button */
@@ -92,21 +98,38 @@ li {
 }
 
 .site-menu {
-  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 30px;
   padding: 0;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  display: flex;
-  width: 345px;
-  justify-content: space-evenly;
+}
 
+.site-menu-item {
+  display: flex;
+  align-items: center;
 }
 
 .site-menu-link {
+  display: block;
+  padding: 17px;
   color: #000;
   text-decoration: none;
 }
+
+.additional-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.additional-menu-button {
+  margin-left: 20px;
+}
+
 
 /* Footer */
 
