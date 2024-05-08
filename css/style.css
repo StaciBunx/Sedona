@@ -88,6 +88,14 @@ li {
   font-size: 20px;
 }
 
+/* Icon button */
+
+.icon-button {
+  display: block;
+  width: 42px;
+  height: 42px;
+}
+
 /* Header */
 
 .header-nav {
@@ -136,7 +144,7 @@ li {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 72px;
+  padding: 30px 72px;
 }
 
 .footer-social {
@@ -149,6 +157,17 @@ li {
   line-height: 40px;
   text-decoration: none;
 }
+
+/* Promo */
+
+.top-banner {
+  min-height: 485px;
+  background-color: #83B3D3;
+  background-image: url(../img/index-top-banner.jpg);
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+
 
 /* Main */
 
@@ -207,24 +226,6 @@ li {
   opacity: 0.3;
 }
 
-/* Select */
-
-.select {
-  border: 2px solid #e6e6e6;
-  border-radius: 4px;
-  width: 160px;
-  height: 48px;
-}
-
-/* Promo */
-
-.top-banner {
-  min-height: 485px;
-  background-color: #83B3D3;
-  background-image: url(../img/index-top-banner.jpg);
-  /* background-repeat: no-repeat;
-  background-size: cover; */
-}
 
 /* Card */
 
@@ -303,6 +304,20 @@ li {
   text-align: center;
 }
 
+/* Select */
+
+.select {
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  width: 160px;
+  height: 48px;
+}
+
+.select-label {
+  margin: 0;
+  margin-right: 50px;
+}
+
 /* Subscribe */
 
 .subscribe {
@@ -323,7 +338,19 @@ li {
 /* Social */
 
 .social {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
+}
+
+.social-item {
+  margin: 0 2px;
+}
+
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
 }
 
 /* Filter */
@@ -351,7 +378,6 @@ li {
 
 .filter-reset {
   align-self: center;
-
   color: #fff;
   background-color: transparent;
   font-family: inherit;
@@ -378,7 +404,9 @@ li {
 
 .catalog-sort {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 44px 0;
 }
 
 .catalog-title {
@@ -392,24 +420,49 @@ li {
 }
 
 .view {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+}
+
+.view-link {
+  display: block;
+  width: 48px;
+  height: 48px;
 }
 
 /* Pagination */
 
+.pagination {
+  padding: 30px 0;
+}
+
 .pagination-nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
+.pagination-item {
+  margin: 0 4px;
+}
+
 .pagination-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 55px;
+  height: 55px;
+  padding: 8px;
   color: #fff;
   background-color: #83B3D3;
   font-size: 20px;
