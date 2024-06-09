@@ -432,6 +432,21 @@ li {
   height: 48px;
 }
 
+/* Cards */
+
+.card-containter {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  grid-template-rows: 438px;
+  column-gap: 18px;
+  row-gap: 10px;
+  margin-bottom: 34px;
+}
+
+.card {
+  padding: 20px;
+}
+
 /* Pagination */
 
 .pagination {
