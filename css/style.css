@@ -145,12 +145,36 @@ li {
   align-items: center;
 }
 
+.site-menu-item-active {
+  position: relative;
+}
+
+.site-menu-item-active::after {
+  content: "";
+  position: absolute;
+  right: 17px;
+  left: 17px;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
+}
+
 .site-menu-link {
   display: block;
   padding: 17px;
   color: #000;
   text-decoration: none;
 }
+
+/* .site-menu-link-active::before {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+  /* border-bottom: 2px solid #756257; */
 
 /* Additional Menu */
 
