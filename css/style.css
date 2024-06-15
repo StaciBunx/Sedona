@@ -155,6 +155,11 @@ li {
   margin: auto;
 }
 
+.additional-menu-link:hover path {
+  fill: #756257;
+}
+
+
 .additional-menu-counter {
   display: block;
   position: absolute;
