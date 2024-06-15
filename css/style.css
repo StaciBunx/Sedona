@@ -159,6 +159,10 @@ li {
   fill: #756257;
 }
 
+.additional-menu-link:active path {
+  fill: rgba(117, 98, 87, 0.3);
+
+}
 
 .additional-menu-counter {
   display: block;
