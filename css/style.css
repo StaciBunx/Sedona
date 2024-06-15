@@ -88,14 +88,6 @@ li {
   font-size: 20px;
 }
 
-/* Icon button */
-
-.icon-button {
-  display: block;
-  width: 42px;
-  height: 42px;
-}
-
 /* Header */
 
 .header-nav {
@@ -147,11 +139,42 @@ li {
   max-width: 322px;
 }
 
+.additional-menu-link {
+  display: block;
+  width: 42px;
+  height: 65px;
+  position: relative;
+}
+
+.additional-menu-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.additional-menu-counter {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 190%;
+  letter-spacing: -0.1em;
+  text-align: center;
+  background-color: #7db54f;
+  color: #fff;
+}
 
 .additional-menu-button {
   margin-left: 20px;
 }
-
 
 /* Footer */
 
