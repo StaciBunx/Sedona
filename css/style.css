@@ -166,15 +166,19 @@ li {
   text-decoration: none;
 }
 
-/* .site-menu-link-active::before {
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-  left: 20px;
-  height: 2px;
-  background-color: #756257;
-  content: "";
-  /* border-bottom: 2px solid #756257; */
+.site-menu-link:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 3px #83b3d3;
+}
+
+.site-menu-link:hover {
+  color: #756257;
+}
+
+.site-menu-link:active {
+  color: #756257;
+  opacity: 0.3;
+}
 
 /* Additional Menu */
 
