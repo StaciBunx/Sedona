@@ -152,6 +152,8 @@ li {
   text-decoration: none;
 }
 
+/* Additional Menu */
+
 .additional-menu {
   display: flex;
   flex-wrap: wrap;
@@ -176,6 +178,12 @@ li {
   margin: auto;
 }
 
+.additional-menu-link:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 3px #83b3d3;
+}
+
+
 .additional-menu-link:hover path {
   fill: #756257;
 }
@@ -183,12 +191,6 @@ li {
 .additional-menu-link:active path {
   fill: rgba(117, 98, 87, 0.3);
 }
-
-.additional-menu-link:focus {
-  outline: none;
-  box-shadow: inset 0 0 0 3px #83b3d3;
-}
-
 
 .additional-menu-counter {
   display: block;
@@ -205,6 +207,10 @@ li {
   text-align: center;
   background-color: #7db54f;
   color: #fff;
+}
+
+.additional-menu-counter:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .additional-menu-button {
