@@ -406,6 +406,10 @@ li {
   padding: 62px 240px 80px;
 }
 
+.advantages-content .section-title {
+  margin-bottom: 31px;
+}
+
 .advantages-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -494,11 +498,6 @@ li {
 .advantages-item-large .advantages-title:not(.advantages-inner-item .advantages-title) {
   color: #fff;
 }
-
-/*
-.advantages-inner-item .advantages-title {
-  color: #000000;
-} */
 
 .advantages-description .advantages-title {
   order: -1;
