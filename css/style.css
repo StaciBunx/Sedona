@@ -220,6 +220,11 @@ li {
   fill: rgba(117, 98, 87, 0.3);
 }
 
+.additional-menu-link:active .additional-menu-counter {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .additional-menu-counter {
   display: block;
   position: absolute;
@@ -235,10 +240,6 @@ li {
   text-align: center;
   background-color: #7db54f;
   color: #fff;
-}
-
-.additional-menu-counter:active {
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .additional-menu-button {
