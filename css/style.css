@@ -204,19 +204,11 @@ li {
 }
 
 .additional-menu-link {
-  display: block;
+  display: grid;
+  place-content: center;
   width: 42px;
   height: 65px;
   position: relative;
-}
-
-.additional-menu-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
 }
 
 .additional-menu-link:focus-visible {
