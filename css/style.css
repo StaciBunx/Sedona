@@ -102,9 +102,6 @@ li {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
-
-
 .button-large {
   font-size: 20px;
 }
@@ -128,7 +125,6 @@ li {
 .logo-img {
   display: block;
 }
-
 
 .site-menu {
   flex-grow: 1;
@@ -269,14 +265,13 @@ li {
 
 /* Promo */
 
-.top-banner {
-  min-height: 485px;
+.main-promo::before {
+  content: "";
+  display: block;
+  height: 485px;
   background-color: #83B3D3;
   background-image: url(../img/index-top-banner.jpg);
-  /* background-repeat: no-repeat;
-  background-size: cover; */
 }
-
 
 /* Main */
 
