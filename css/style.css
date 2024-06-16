@@ -267,15 +267,61 @@ li {
   padding: 30px 72px;
 }
 
+.page-footer-social {
+  align-self: start;
+  margin-top: 8px;
+}
+
+
 .footer-phone {
+  padding: 15px;
+  border-radius: 10px;
   color: #000;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
 }
 
+
+.footer-phone:focus-visible {
+  outline: 3px solid #83b3d3;
+  outline-offset: -3px;
+}
+
+.footer-phone:hover {
+  color: #756257;
+}
+
+.footer-phone:active {
+  opacity: 0.3;
+}
+
 .footer-developer {
+  display: block;
+  margin-right: -12px;
+  padding: 16px 22px;
   justify-self: end;
+  border-radius: 10px;
+}
+
+
+.footer-developer:focus-visible {
+  fill: #756257;
+  outline: 3px solid #68a2ca;
+  outline-offset: -3px;
+}
+
+.footer-developer:hover {
+  fill: #756257;
+}
+
+.footer-developer:active {
+  fill: #756257;
+  opacity: 0.3;
+}
+
+.footer-developer-image {
+  display: block;
 }
 
 /* Promo */
@@ -626,17 +672,33 @@ li {
 .social {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  margin-right: -2px;
+  margin-left: -2px;
 }
 
 .social-item {
-  margin: 0 2px;
+  margin: 2px;
 }
 
 .social-link {
-  display: block;
+  display: grid;
+  place-content: center;
   width: 40px;
   height: 40px;
+  border-radius: 10px;
+}
+
+.social-link:focus-visible {
+  outline: 3px solid #83b3d3;
+  outline-offset: -3px;
+}
+
+.social-link:hover path {
+  fill: #68a2ca;
+}
+
+.social-link:active path {
+  opacity: 0.3;
 }
 
 /* Filter */
