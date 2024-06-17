@@ -884,6 +884,12 @@ li {
   padding: 44px 0;
 }
 
+.catalog-title {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
 /* View */
 
 .view {
