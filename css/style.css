@@ -748,6 +748,7 @@ li {
 }
 
 /* Filter */
+
 .filter-form {
   display: grid;
   grid-template-columns: 200px 200px 1fr 223px;
@@ -771,12 +772,24 @@ li {
   margin-left: 80px;
 }
 
+.filter-submit {
+  width: 160px;
+  height: 48px;
+}
+
+.button.filter-submit {
+  margin-bottom: 20px;
+
+}
+
 .filter-reset {
   align-self: center;
   color: #fff;
   background-color: transparent;
   font-family: inherit;
   font-size: 18px;
+  border: none;
+  cursor: pointer;
 }
 
 /* Catalog */
