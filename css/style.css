@@ -80,7 +80,7 @@ li {
   padding: 8px 15px;
   color: #fff;
   background-color: #83B3D3;
-  border: none;
+  border: 3px solid transparent;
   border-radius: 4px;
   font-family: inherit;
   font-size: 16px;
@@ -92,7 +92,8 @@ li {
 }
 
 .button:focus-visible {
-  outline: 3px solid #615048;
+  border-color: #615048;
+  background-color: #68a2ca;
 }
 
 .button:hover {
@@ -109,9 +110,9 @@ li {
 }
 
 .button-secondary:focus-visible {
-  background-color: #615048;
   outline: none;
-  box-shadow: inset 0 0 0 3px #83b3d3;
+  background-color: #615048;
+  border-color: #83b3d3;
 }
 
 .button-secondary:hover {
@@ -127,6 +128,23 @@ li {
   padding: 16px;
   border-radius: 10px;
 }
+
+.button-success {
+  background-color: #7db54f;
+}
+
+.button-success:focus-visible {
+  background-color: #6c9e42;
+}
+
+.button-success:hover {
+  background-color: #6c9e42;
+}
+
+.button-success:active {
+  background-color: #6c9e42;
+}
+
 
 /* Header */
 
@@ -460,14 +478,19 @@ li {
 
 
 /* Card */
+
 .card-containter {
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 18px;
   row-gap: 10px;
 }
 
 .card {
+  position: relative;
+  z-index: 0;
+
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 26px 1fr;
@@ -482,6 +505,30 @@ li {
   padding: 20px;
 }
 
+.card-link {
+  grid-area: title;
+  color: #000;
+}
+
+.card-link:focus {
+  outline: none;
+}
+
+.card-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 160px;
+  left: 0;
+  z-index: 1;
+}
+
+.card-title {
+  font-size: 24px;
+  line-height: 31px;
+}
+
 .card-img {
   order: -1;
   width: 100%;
@@ -490,26 +537,26 @@ li {
   object-fit: cover;
 }
 
-.card-title {
-  grid-area: title;
-  margin: 0;
-  font-size: 24px;
-  line-height: 31px;
+.card-link:focus-visible+.card-img {
+  outline: 3px solid #83b3d3;
+}
+
+.card-link:hover+.card-img {
+  opacity: 0.6;
+}
+
+.card-link:active+.card-img {
+  opacity: 0.3;
 }
 
 .card-description {
   grid-column: description;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 140px;
   column-gap: 26px;
   margin: 0;
+  line-height: 23px;
 }
-
-.card-link {
-  color: #000;
-  text-decoration: none;
-}
-
 
 .card-more {
   grid-area: button-more;
@@ -521,8 +568,47 @@ li {
 
 .card-rate {
   grid-area: rate;
+  justify-self: end;
+  min-width: 160px;
+  padding: 7px 8px 6px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
   font-size: 16px;
+  text-align: center;
   text-transform: uppercase;
+  line-height: 24px;
+}
+
+.card-star {
+  grid-area: stars;
+  align-self: start;
+}
+
+/* Star */
+.star {
+  width: 23px;
+  margin: 0;
+  min-height: 37px;
+  background-repeat: repeat-x;
+  background-position: 0 50%;
+  background-size: 23px 17px;
+  background-image: url("../img/icons/star.svg");
+}
+
+.star-two {
+  width: 46px;
+}
+
+.star-three {
+  width: 69px;
+}
+
+.star-four {
+  width: 92px;
+}
+
+.star-five {
+  width: 115px;
 }
 
 /* Advantages */
