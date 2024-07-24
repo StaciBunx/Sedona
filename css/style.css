@@ -569,6 +569,52 @@ li {
   margin-top: 28px;
 }
 
+/* Slider */
+
+.slider {
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+
+}
+
+.slider-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.slider-thumb {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.thumb-max {
+  right: 0;
+}
+
+.slider .slider-thumb:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.slider-thumb:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.slider-thumb:active {
+  outline-width: 2px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
 /* Card */
 
 .card-containter {
