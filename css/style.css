@@ -1384,8 +1384,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   padding: 8px;
   color: #ffffff;
   background-color: #83B3D3;
